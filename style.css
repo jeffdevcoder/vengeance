@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 405px;
+}
+
+.tela1, .tela2, .tela3, .tela4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.gif-demo1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tela1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.tela2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: red;
+    height: 105vh;
+    position: relative;
+}
+
+.gif-demo2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    left: 0;  
+    top: 50%;  
+    transform: translateY(-50%); 
+    color: white; 
+    padding: 20px;
+    font-size: 1.5rem;
+    max-width: 50%;
+    z-index: 2;
+}
+
+.tela3 {
+    background-color: purple;
+}
+
+.tela4 {
+    background-color: blue;
+}
+
+.classe1 {
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+
+.classe2 {
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+
+.classe3 {
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+
+.print {
+    width: 40%;
+}
