@@ -70,34 +70,105 @@ body, html {
     font-size: 1.5rem;
     max-width: 50%;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .tela3 {
-    background-color: purple;
+    background-color: #27211F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .tela4 {
-    background-color: blue;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: white;
+    }
 }
 
-.classe1 {
+.creditos {
     display: flex;
-    width: 100%;
-    height: 33%;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 20px;
+    }
 }
 
-.classe2 {
-    display: flex;
-    width: 100%;
-    height: 33%;
+.criador-img {
+    width: 35%;
+    border-radius: 50%;
+    padding: 5px;
 }
 
-.classe3 {
+.criador {
     display: flex;
-    width: 100%;
-    height: 33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        background-color: #27211F;
+        border-radius: 15px;
+        padding: 5px;
+    }
+}
+
+.logo-unity {
+    width: 20%;
+}
+
+.classe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-style: dotted;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    p {
+        color: white;
+        font-size: 20px;
+    }
 }
 
 .print {
-    width: 40%;
+    width: 50%;
+    max-width: 540px;
+    height: 50%;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .classe1, .classe2, .classe3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        p {
+            width: 80%;
+        }
+    }
+    .logo-unity {
+        width: 60%;
+    }
+    .criador-img {
+        width: 50%;
+        border-radius: 50%;
+        padding: 5px;
+    }
 }
