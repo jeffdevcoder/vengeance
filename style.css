@@ -112,8 +112,9 @@ body, html {
 .criador {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     align-items: center;
+    padding-bottom: 15px;
     p {
         background-color: #27211F;
         border-radius: 15px;
